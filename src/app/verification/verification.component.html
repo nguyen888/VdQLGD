@@ -1,0 +1,30 @@
+<div class="verification">
+    <div class="frmverification">
+        <form #verificationForm="ngForm"  (ngSubmit)="onSubmit(verificationForm.value)">
+            
+            <p class="txt-code">
+                <input type="text" class="form-control" name="code" id="inputCode" placeholder="Mã xác thực" ngModel/>
+            </p>
+            <!-- <p class="txt-code">
+                <label>Mã xác thực</label>
+                <td></td>
+                <input type="text" class="txt-code" name="code" ngModel />
+            </p> -->
+            <ul>
+                <th>
+                    <p class="form-cancel">
+                        <button (click)="goBack()">Hủy</button>
+                    </p>
+                </th>
+                <td></td>
+                <th>
+                    <p class="form-send">
+                        <button type="submit">Gửi</button>
+                    </p>
+                </th>
+            </ul>
+        </form>
+    </div>
+</div>
+
+<router-outlet></router-outlet>

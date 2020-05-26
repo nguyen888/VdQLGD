@@ -1,0 +1,51 @@
+<div class="auth">
+    <div class="card">
+        <div>
+            <div class="formmain">
+                <div class="card-body">
+                    <div class="img-head">
+                        <img [src]="avatar.url" alt="" class="img-avatar">
+                    </div>                  
+                    <form #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm.value)">
+                        <div class="txt">
+                            <h4 class="mb-3 f-w-400">Trường phổ thông cơ sở Tân Mai</h4>
+                        </div>
+                        <div class="form-group mb-3">
+                            <input type="text" class="form-control" id="inputUsername" name="username"
+                                placeholder="Tên đăng nhập" ngModel>
+
+                        </div>
+                        <th></th>
+                        <div class="form-group mb-3">
+
+                            <input type="password" class="form-control" id="inputPassword" name="password"
+                                placeholder="Mật khẩu" ngModel>
+                        </div>
+                        <td>
+
+                        </td>
+                        <div class="f-w-400">
+                            <th>
+                                <div class="form-savelogin">
+                                    <input type="checkbox" class="form-savelogin" name="savelogin" ngModel />
+                                    <label for="txt2">Nhớ đăng nhập</label>
+                                </div>
+                            </th>
+                            <th>
+                                <div class="f-w-400">
+                                    <a [routerLink]="['forgotpassword']" routerLinkActive="active" class="forgotpassword" >Quên mật khẩu</a>
+                                </div>
+                               </th>
+                        </div>
+                       
+
+                        <button class="btn btn-block btn-primary mb-4" type="submit">
+                            Đăng nhập
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<router-outlet></router-outlet>

@@ -1,0 +1,72 @@
+/* img{
+  margin: auto;
+}
+.form-link{
+    text-align: left;
+    padding-left:20px ;
+
+  }*/
+ 
+  /* .txt{
+    font-size: 1.2em;
+    
+  } */
+  /* div.txt{
+    
+      margin: 0em 5em 0em 5em;
+   
+  }
+  .formmain form{
+   padding: 0 20px;
+    margin: auto;
+  }
+  th{
+    margin: auto;
+    padding: 20px 0;
+    
+  }
+.form-savelogin{
+    text-align: left;
+  }
+  */
+  .formmain {
+    
+    width: 450px;
+    border: 5px solid black;
+    
+    margin: auto;
+ 
+  } 
+  .btnlog{
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+  }
+.auth{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    min-width: 100%;
+    min-height: 100vh;
+    /* background: #4680ff; */
+}
+h4{
+   
+    text-align: center;
+    margin: auto;
+}
+.card-body{
+  padding: 40px 35px;
+}
+.img-avatar{
+ 
+  width: 10em;
+  height: 10em; 
+  padding: 5%;
+  margin-left:8em;
+}
+.forgotpassword{
+  margin-left:  10em;
+}
